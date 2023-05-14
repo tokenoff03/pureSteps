@@ -1,0 +1,50 @@
+
+
+.img {
+    width: 136.08px; 
+    height: 52px;
+    
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+ul {
+    display: flex;
+    align-items: center;
+    padding: 0px 50px;
+    gap: 52px;
+    background: #0F1E33;
+    border-radius: 12px;
+}
+
+header p {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+
+    color: rgba(255, 255, 255, 0.9);
+}
+
+header button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 21px;
+    height: 48px;
+    background: #0058E2;
+    border-radius: 12px;
+    border: 1px solid #0058E2;
+
+    margin-left: 8px;
+    
+}
