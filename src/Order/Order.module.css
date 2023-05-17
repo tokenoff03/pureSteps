@@ -1,0 +1,348 @@
+.Order {
+    margin-top: 110px;
+    padding: 32px 40px;
+    
+    background: #FFFFFF;
+    box-shadow: 0px 4px 72px rgba(0, 88, 226, 0.12);
+    border-radius: 20px;
+}
+
+.h3 {
+    margin: 0;
+}
+
+.Order > p{
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: flex-end;
+
+    color: rgba(15, 30, 51, 0.8);
+    margin-bottom: 40px;
+}
+
+
+.formContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.formContent > input {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    /* identical to box height */
+
+
+    color: rgba(15, 30, 51, 0.8);
+    outline: none;
+    padding: 16px;
+    width: 30%;
+    height: 23px;
+    background: linear-gradient(0deg, rgba(0, 88, 226, 0.05), rgba(0, 88, 226, 0.05)), #FFFFFF;
+    border: 1px solid rgba(0, 88, 226, 0.08);
+    border-radius: 10px;
+}
+
+.formContent > input::-webkit-input-placeholder {
+    /* Стили для WebKit-браузеров (Chrome, Safari) */
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    /* identical to box height */
+
+
+    color: rgba(0, 88, 226, 0.5);
+ }
+ 
+ .formContent > input:-moz-placeholder {
+    /* Стили для Firefox */
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    /* identical to box height */
+
+
+    color: rgba(0, 88, 226, 0.5);
+   
+ }
+ 
+ .formContent > input::-moz-placeholder {
+    /* Стили для Firefox */
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    /* identical to box height */
+
+
+    color: rgba(0, 88, 226, 0.5);
+ }
+ 
+ .formContent > input:-ms-input-placeholder {
+    /* Стили для Internet Explorer */
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    /* identical to box height */
+
+
+    color: rgba(0, 88, 226, 0.5);
+ }
+ 
+ .formContent > input::placeholder {
+    /* Стили для браузеров, поддерживающих стандарт */
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    /* identical to box height */
+
+
+    color: rgba(0, 88, 226, 0.5);
+ }
+
+
+.formContent button {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 24px;
+    /* identical to box height, or 141% */
+
+
+    /* white-color */
+
+    color: #FFFFFF;
+    padding: 15px 0px;
+    
+    width: 28%;
+    height: 54px;
+    background: #0058E2;
+    border: 1px solid #0058E2;
+    border-radius: 10px;
+}
+
+.counter_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 28%;
+    height: 54px;
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+}
+
+.counter_block > p {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 24px;
+    /* identical to box height, or 141% */
+
+
+    color: #00264B;
+}
+
+.counter > input {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    /* identical to box height, or 140% */
+    color: #0F1E33;
+    outline: none;
+    border: none;
+    width: 35px;
+    text-align: center;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+   -webkit-appearance: none;
+   margin: 0;
+}
+
+input[type="number"] {
+   -moz-appearance: textfield;
+}
+
+.minus{
+    
+    border: 1px solid rgba(15, 30, 51, 0.2);
+    background: rgba(15, 30, 51, 0.2);
+}
+
+.plus{
+    
+    background: #0058E2;
+    border: 1px solid #0058E2;
+}
+
+.minus, .plus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    padding:0px 5px 8px 5px;
+    font-size: 2em;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+}
+
+@media screen and (max-width: 1200px) {
+    
+}
+
+@media screen and (max-width: 992px){
+    
+    .Order > p{
+        margin-top: 10px;
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    .formContent > input {
+        font-size: 14px;
+    }
+
+    .formContent > input::placeholder{
+        font-size: 14px;
+    }
+
+    .counter_block p {
+        font-size: 14px;
+    }
+
+    .plus, .minus {
+        width: 10px;
+        height: 10px;
+        padding: 3px 5px 5px 5px;
+        font-size: 15px
+    }
+    .counter > input {
+        font-size: 16px;
+        width: 25px;
+    }
+
+    .formContent button{
+        font-size: 15px;
+    }
+  }
+
+
+@media screen and (max-width: 768px){
+    .Order {
+        margin-top: 85px;
+    }
+    .Order > p{
+        margin-top: 10px;
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    .formContent > input {
+        font-size: 12px;
+        width: 27%;
+    }
+
+    .formContent > input::placeholder{
+        font-size: 12px;
+    }
+
+    .counter_block p {
+        font-size: 10px;
+    }
+
+    .plus, .minus {
+        width: 8px;
+        height: 8px;
+        padding: 3px 5px 5px 5px;
+        font-size: 12px
+    }
+    .counter > input {
+        font-size: 14px;
+        width: 20px;
+    }
+
+    .formContent button{
+        font-size: 14px;
+    }
+
+    .Order {
+        padding: 20px 30px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .Order {
+        padding: 10px 20px;
+    }
+    .Order > p {
+        font-size: 0.8em;
+        margin-top: 5px;
+    }
+
+    .formContent > input {
+        padding: 16px;
+        width: 100%;
+        padding: 14px;
+    }
+
+    .counter_block {
+        width: 100%;
+    }
+
+    .minus, .plus {
+        width: 10px;
+        height: 10px;
+    }
+
+    .counter input {
+        font-size: 1em;
+    }
+
+    .counter_block p {
+        font-size: 0.9em;
+        line-height: 1.2em;
+    }
+
+    .formContent button {
+        display: flex;
+        width: 90%;
+        margin-top: 20px;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.7em;
+        height: 50px;
+    }
+    
+    .formContent {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+  

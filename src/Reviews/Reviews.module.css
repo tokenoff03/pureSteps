@@ -1,0 +1,33 @@
+.Reviews {
+    margin-top: 110px;
+}
+
+.reviews_images {
+    display: flex;
+    justify-content: space-between;
+}
+
+.reviews_images img {
+    width: 18.5%;
+}
+
+
+@media screen and (max-width: 768px){
+    .Reviews {
+        margin-top: 90px;
+    }
+
+    .reviews_images img:nth-child(n+4) {
+        display: none
+    }
+
+    .reviews_images img {
+        width: 32%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .Reviews {
+        display: none;
+    }
+}

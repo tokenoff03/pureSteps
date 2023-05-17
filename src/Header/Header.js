@@ -5,34 +5,29 @@ function Header() {
   return (
     <div className={h.header}>
       <header>
-        <div className="container">
           <div className={h.head}>
-
-            
-            <div className={h.img}>
-              s
-            </div>
+            <img src="./image/logo.png" alt="Logo" className={h.img}/>
             
             <nav>
                <ul>
                   <li>
-                    <p>Прайс</p>
+                    <a href="#"><p>Прайс</p></a> 
                   </li>
                   <li>
-                    <p>До/после</p>
+                    <a href="#"><p>До/после</p></a> 
                   </li>
                   <li>
-                    <p>Отзывы</p>
+                    <a href="#"><p>Отзывы</p></a> 
                   </li>
                   <li>
-                    <p>Контакты</p>
+                    <a href="#"><p>Контакты</p></a> 
                   </li>
                </ul>
                <button><p>Заказать курьера</p></button>
             </nav>
             
           </div>
-        </div>
+        
       </header>
     </div>
   );

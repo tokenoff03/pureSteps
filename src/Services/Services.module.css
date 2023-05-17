@@ -1,0 +1,360 @@
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 55px;
+}
+
+.cleaning {
+    position: relative;
+    width: 50%;
+    padding: 32px;
+   
+    background: linear-gradient(0deg, rgba(0, 88, 226, 0.04), rgba(0, 88, 226, 0.04)), #FFFFFF;
+    border-radius: 20px;
+    
+}
+
+.cleaning img:first-child {
+    position: absolute;
+    right: -35px;
+    top: -80px;
+}
+
+.additional {
+    width: 43%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.underH4 {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+    margin: 6px 0px;
+    color: rgba(15, 30, 51, 0.8);
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 100px;
+}
+
+.price p {
+    margin: 0;
+}
+
+.price_content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 24px;
+    /* identical to box height, or 120% */
+
+
+    color: #0F1E33;
+}
+
+.cost {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 24px;
+    /* identical to box height, or 141% */
+
+
+    color: #0F1E33;
+}
+
+.additional_price {
+    display: flex;
+    justify-content: space-between;
+    height: 48%;
+}
+
+.additional_price_content {
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    padding: 28px 24px;
+    position: relative;
+    background: linear-gradient(0deg, rgba(0, 88, 226, 0.04), rgba(0, 88, 226, 0.04)), #FFFFFF;
+    border-radius: 20px;
+
+}
+
+.additional_price_content img {
+    position: absolute;
+    left: 1px;
+    bottom: 1px;
+    width: 160px;
+    
+}
+
+.additional_price_content p:first-child{
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: 0;
+    /* identical to box height */
+
+
+    color: rgba(15, 30, 51, 0.8);
+}
+
+.additional_price_content p:nth-child(2){
+    margin: 0;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+
+    color: #0F1E33;
+}
+
+.additional_price_content p:last-child{
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 24px;
+    /* identical to box height, or 141% */
+    align-self: flex-end;
+    position: absolute;
+    bottom: 4px;
+    color: #0F1E33;
+}
+
+@media screen and (max-width: 1200px) {
+    .service {
+        font-size: 20px;
+    }
+    .cost{
+        font-size: 17px;
+    }
+
+    .underH4 {
+        font-size: 15px;
+    }
+    .additional_price_content p:first-child{
+        font-size: 12px;
+    }
+
+    .additional_price_content p:nth-child(2){
+        font-size: 18px;
+    }
+
+    .additional_price_content p:last-child{
+        font-size: 17px;
+    }
+
+    .additional_price_content img {
+        width: 140px;
+    }
+
+    .additional_price_content {
+        width: 38%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .service {
+        font-size: 18px;
+    }
+    .cost{
+        font-size: 14px;
+    }
+
+    .underH4 {
+        font-size: 12px;
+    }
+    .additional_price_content p:first-child{
+        font-size: 10px;
+    }
+
+    .additional_price_content p:nth-child(2){
+        font-size: 14px;
+    }
+
+    .additional_price_content p:last-child{
+        font-size: 12px;
+    }
+
+    .additional_price_content {
+        width: 36%;
+    }
+
+    .cleaning {
+        width: 48%;
+    }
+
+    .additional_price_content img {
+        width: 130px;
+    }
+    .price {
+        margin-top: 45px;
+    }
+    .cleaning img:first-child {
+        width: 40%;
+        right: -35px;
+        top: -70px;
+    }
+
+    .price {
+        gap: 10px;
+    }
+}
+
+
+@media screen and (max-width: 860px) {
+    .service {
+        font-size: 16px;
+    }
+    .cost{
+        font-size: 12px;
+    }
+
+    .underH4 {
+        font-size: 10px;
+    }
+
+    .additional_price_content p:first-child{
+        font-size: 10px;
+    }
+
+    .additional_price_content p:nth-child(2){
+        font-size: 12px;
+        line-height: 1.3em;
+    }
+
+    .additional_price_content p:last-child{
+        font-size: 10px;
+    }
+
+    .additional_price_content {
+        width: 36%;
+    }
+
+    .cleaning {
+        width: 48%;
+        padding: 20px;
+    }
+
+    .additional_price_content img {
+        width: 120px;
+    }
+    .price {
+        margin-top: 35px;
+    }
+    .cleaning img:first-child {
+        width: 40%;
+        right: -35px;
+        top: -70px;
+    }
+
+    .price {
+        gap: 4px;
+    }
+
+    .additional_price_content {
+        padding: 14px 19px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .additional_price_content img {
+        width: 100px;
+    }
+
+    .additional_price_content p:first-child{
+        font-size: 8px;
+    }
+
+    .additional_price_content p:nth-child(2){
+        font-size: 10px;
+        line-height: 1.3em;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .cleaning {
+        width: 90%;
+    }
+
+    .cleaning img {
+        display: none;
+    }
+
+    .additional{
+        width: 100%;
+        gap: 20px;
+    }
+
+    .additional_price_content {
+        padding: 13px;
+        width: 40%;
+    }
+
+    .additional_price {
+        height: 190px;
+    }
+
+    
+    .underH4 {
+        font-size: 0.8em;
+        margin: 0;
+    }
+
+    .service {
+        font-size: 0.9em;
+    }
+
+    .price {
+        gap: 5px;
+    }
+    .cost{
+        font-size: 0.8em;
+    }
+
+    
+    .additional_price_content p:first-child{
+        font-size: 0.7em;
+    }
+
+    .additional_price_content p:nth-child(2){
+        font-size: 0.8em;
+        line-height: 1.3em;
+    }
+
+    .additional_price_content p:last-child{
+        font-size: 0.8em;
+    }
+
+    .additional_price_content img {
+        width: 70%;
+    }
+
+    .content {
+        margin-top: 0;
+    }
+}
