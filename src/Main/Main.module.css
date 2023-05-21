@@ -65,7 +65,7 @@
 }
 
 .mainForm input {
-    width: 338px;
+    width: 324px;
     height: 52px;
     font-family: 'Gilroy';
     font-style: normal;
@@ -78,14 +78,14 @@
     outline: none;
     color: #FFFFFF;
     padding-left: 14px;
+    padding-right: 14px;
     border-radius: 10px;
 }
 
-.mainForm button {
+.mainForm a {
     justify-content: center;
     display: flex;
     align-items: center;
-    padding: 14px 0px;
     width: 352px;
     height: 52px;
     font-family: 'Gilroy';
@@ -97,25 +97,41 @@
     border: 1px solid white;
     border-radius: 10px;
     color: rgba(0, 88, 226, 0.72);
+    transition: ease-out 0.4s;
+}
+
+.mainForm a:hover {
+    background-color:rgb(28,52,88);
+    border: 1px solid rgb(28,52,88);
 }
 
 
 
 .mainShoes {
     position: absolute;
-    width: 53%;
+    width: 800px;
     right: 1px;
     top:1%;
-    z-index: 1;
 }
 
 .underMainShoes {
     position: absolute;
+    width: 1000px;
     right: 1px;
     top: 47%;
    
 }
 
+@media screen and (max-width: 1250px) {
+    .mainShoes {    
+        width: 700px;    
+    }
+    
+    .underMainShoes {
+        width: 800px;
+        top: 350px; 
+    }
+}
 @media screen and (max-width: 1200px) {
     .h1 {
         font-size: 86px;
@@ -128,8 +144,28 @@
         width: 490px;
     }
 
+    .mainShoes {
+        top: 25px;
+        width: 650px; 
+    }
+
+    .underMainShoes {
+        width: 750px;
+        top: 344px;     
+    }
 }
 
+@media screen and (max-width: 1100px) {
+    .mainShoes {
+        top: 60px;
+        width: 550px; 
+    }
+
+    .underMainShoes {
+        width: 650px;
+        top: 330px;     
+    }
+}
 @media screen and (max-width: 992px) {
     .h1 {
         font-size: 70px;
@@ -154,11 +190,11 @@
     }
 
     .mainForm input {
-        width: 95%;
+        width: 89%;
         height: 42px;
         font-size: 14px;
     }
-    .mainForm button {
+    .mainForm a {
         
         width: 260px;
         height: 42px;
@@ -167,6 +203,28 @@
         
     }
 
+    .mainShoes {
+        top: 35px;
+        width: 530px; 
+    }
+
+    .underMainShoes {
+        width: 600px;
+        top: 280px;     
+    }
+
+}
+
+@media screen and (max-width: 910px) {
+    .mainShoes {
+        top: 40px;
+        width: 450px; 
+    }
+
+    .underMainShoes {
+        width: 500px;
+        top: 260px;     
+    }
 }
 
 @media screen and (max-width: 860px) {
@@ -197,11 +255,11 @@
     }
 
     .mainForm input {
-        width: 95%;
+        width: 87%;
         height: 32px;
         font-size: 12px;
     }
-    .mainForm button {
+    .mainForm a {
         
         width: 220px;
         height: 32px;
@@ -209,9 +267,37 @@
         font-size: 12px;
         
     }
+
+    .mainShoes {
+        top: 40px;
+        width: 450px; 
+    }
+
+    .underMainShoes {
+        width: 500px;
+        top: 260px;     
+    }
 }
 
+@media screen and (max-width: 810px) {
+    .mainShoes {
+        top: 40px;
+        width: 350px; 
+    }
+
+    .underMainShoes {
+        width: 450px;
+        top: 213px;     
+    }
+}
 @media screen and (max-width: 768px){
+    .Main {
+        padding-top: 140px;
+    }
+    
+    .h1 {
+        margin-top: 0;
+    }
     .mainForm {
         gap: 10px;
     }
@@ -222,10 +308,10 @@
 
     .mainForm input {
         height: 25px;
-        width: 90%;
+        width: 84%;
         font-size: 10px;
     }
-    .mainForm button {
+    .mainForm a {
         
         width: 180px;
         height: 25px;
@@ -235,6 +321,16 @@
     }
 }
 
+
+@media screen and (max-width: 720px) {
+    .mainShoes {
+        display: none;
+    }
+
+    .underMainShoes {
+        display: none;    
+    }
+}
 @media screen and (max-width: 576px) {
     .mainShoes {
         display: none;
@@ -245,7 +341,7 @@
     }
 
     .h1 {
-        margin-top: 80px;
+        margin-top: 30px;
         font-size: 40px;
         line-height: 0em;
     }
@@ -282,13 +378,14 @@
         font-size: 12px;
     }
     
-    .mainForm button {
+    .mainForm a {
         
-        padding: 14px 0px;
+        
         width: 250px;
         height: 45px;
         
         font-size: 12px;
 
     }
+    
 }

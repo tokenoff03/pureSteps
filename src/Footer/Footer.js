@@ -9,16 +9,16 @@ function Footer() {
 
             <div className={f.footerNav}>
                 <div>
-                    <p>Прайс</p>
-                    <p>До/После</p>
+                    <p><a href="#services">Прайс</a></p>
+                    <p><a href="#sneakers">До/После</a></p>
                 </div>
                 <div>
-                    <p>Отзывы</p>
-                    <p>Контакты</p>
+                    <p><a href="#reviews">Отзывы</a></p>
+                    <p><a href="#map">Контакты</a></p>
                 </div>
             </div>
 
-            <button>Заказать курьера</button>
+            <a href="#order">Заказать курьера</a>
         </div>
 
         <div className={f.hr}>
@@ -26,12 +26,12 @@ function Footer() {
         </div>
 
         <div className={f.bottom_content}>
-            <p>© a_leekhan.designer. All rights reserved.</p>
+            <p>© a_leekhan.designer | @tokenoff_a.developer | All rights reserved.</p>
             <div className="social-media">
-              <a href="#"><div className="social-media-circle">
+              <a href="#" target="_blank"><div className="social-media-circle">
                   <img src="./image/whatsApp.png" alt="whatsApp"/>
               </div></a>
-              <a href="#"><div className="social-media-circle">
+              <a href="https://www.instagram.com/puresteps.kz/" target="_blank"><div className="social-media-circle">
                   <img src="./image/instagram.png" alt="instagram"/>
               </div></a>
             </div>

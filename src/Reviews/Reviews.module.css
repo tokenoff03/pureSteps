@@ -7,8 +7,20 @@
     justify-content: space-between;
 }
 
-.reviews_images img {
+.reviews_images a {
     width: 18.5%;
+    display: flex;
+    justify-content: center;
+}
+
+.reviews_images img {
+    width: 100%;
+    
+}
+
+.reviews_images img:hover {
+    transition: 1s;
+    transform: scale(1.1);
 }
 
 
@@ -17,11 +29,11 @@
         margin-top: 90px;
     }
 
-    .reviews_images img:nth-child(n+4) {
+    .reviews_images a:nth-child(n+4) {
         display: none
     }
 
-    .reviews_images img {
+    .reviews_images a {
         width: 32%;
     }
 }

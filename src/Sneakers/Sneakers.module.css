@@ -6,8 +6,12 @@
 .images img {
     border-radius: 20px;
     width: 23.5%;
+    transition: 1s;
 }
 
+.images img:hover {
+    transform: scale(1.1);
+}
 .Sneakers {
     margin-bottom: 110px;
 }

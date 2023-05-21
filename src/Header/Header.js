@@ -1,31 +1,39 @@
 import h from "./Header.module.css";
-
+import {AiOutlineMenu, AiOutlineClose} from "react-icons/ai"
+import React, { useState } from 'react';
 
 function Header() {
+
+  const [nav,setNav] = useState(false);
   return (
     <div className={h.header}>
       <header>
           <div className={h.head}>
             <img src="./image/logo.png" alt="Logo" className={h.img}/>
             
-            <nav>
+            <nav className={nav ? h.active : ""}>
                <ul>
                   <li>
-                    <a href="#"><p>Прайс</p></a> 
+                    <a href="#services"><p onClick={()=>setNav(false)}>Прайс</p></a>
                   </li>
                   <li>
-                    <a href="#"><p>До/после</p></a> 
+                    <a href="#sneakers"><p onClick={()=>setNav(false)}>До/после</p></a> 
                   </li>
                   <li>
-                    <a href="#"><p>Отзывы</p></a> 
+                    <a href="#reviews"><p onClick={()=>setNav(false)}>Отзывы</p></a> 
                   </li>
                   <li>
-                    <a href="#"><p>Контакты</p></a> 
+                    <a href="#map"><p onClick={()=>setNav(false)}>Контакты</p></a> 
                   </li>
                </ul>
-               <button><p>Заказать курьера</p></button>
+               <a href="#order"><p onClick={()=>setNav(false)}>Заказать курьера</p></a>
             </nav>
-            
+            <div onClick={() => setNav(!nav)} className={h.mobile_btn}>
+              {
+                nav ? <AiOutlineClose size={25}/> : <AiOutlineMenu size={25}/> 
+              }
+              
+            </div>
           </div>
         
       </header>

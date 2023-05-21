@@ -3,7 +3,7 @@ import ss from "./Services.module.css";
 
 function Services() {
   return (
-    <div className={ss.Services}>
+    <div className={ss.Services} id="services">
         
         <h3>Прайс и услуги </h3>
         <div className={ss.content}>

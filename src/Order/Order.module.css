@@ -125,7 +125,7 @@
     font-size: 17px;
     line-height: 24px;
     /* identical to box height, or 141% */
-
+    transition: 1s;
 
     /* white-color */
 
@@ -139,6 +139,9 @@
     border-radius: 10px;
 }
 
+.formContent button:hover {
+    transform: scale(1.1);
+}
 .counter_block {
     display: flex;
     justify-content: space-between;
@@ -196,6 +199,11 @@ input[type="number"] {
 
 .plus{
     
+    background: #0058E2;
+    border: 1px solid #0058E2;
+}
+
+.blue {
     background: #0058E2;
     border: 1px solid #0058E2;
 }

@@ -26,16 +26,22 @@
     line-height: 21px;
     /* identical to box height */
     margin: 0;
-
+    transition: 1s;
     color: rgba(0, 88, 226, 0.8);
 }
 
+.footerNav p:hover {
+    transform: scale(1.2);
+}
+.footerNav a {
+    color: rgba(0, 88, 226, 0.8);
+}
 .footerNav div p:last-child {
     margin-top: 28px;
 }
 
 
-.content button {
+.content > a {
     display: flex;
     align-self: flex-start;
     align-items: center;
@@ -46,12 +52,12 @@
     font-size: 17px;
     line-height: 24px;
     /* identical to box height, or 141% */
-
+    transition: 1s;
 
     /* white-color */
 
     color: #FFFFFF;
-    padding: 15px 0px;
+    
     width: 312.64px;
     height: 54px;
     border: 1px solid #0058E2;
@@ -59,6 +65,9 @@
     border-radius: 10px;
 }
 
+.content > a:hover {
+    transform: scale(1.1);
+}
 .hr {
     width: 100%;
     height: 1px;
@@ -90,7 +99,7 @@
         width: 180px;
     }
 
-    .content button {
+    .content  > a {
         width: 250px;
     }
     .footerNav p{
@@ -104,7 +113,7 @@
         height: 60px;
     }
 
-    .content button {
+    .content > a {
         font-size: 14px;
         width: 250px;
     }
@@ -132,7 +141,7 @@
         margin-top: 20px;
     }
 
-    .content button {
+    .content > a {
         font-size: 14px;
         width: 200px;
         height: 40px;

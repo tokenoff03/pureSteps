@@ -92,7 +92,9 @@
     position: relative;
     background: linear-gradient(0deg, rgba(0, 88, 226, 0.04), rgba(0, 88, 226, 0.04)), #FFFFFF;
     border-radius: 20px;
-
+    transform: scale(1);
+	animation: pulse 4s infinite;
+    
 }
 
 .additional_price_content img {
@@ -100,7 +102,7 @@
     left: 1px;
     bottom: 1px;
     width: 160px;
-    
+    user-select: none;
 }
 
 .additional_price_content p:first-child{
@@ -138,6 +140,25 @@
     position: absolute;
     bottom: 4px;
     color: #0F1E33;
+    
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		
+	}
+
+	70% {
+		transform: scale(1);
+		
+	}
+
+	100% {
+		transform: scale(0.95);
+		
+	}
+    
 }
 
 @media screen and (max-width: 1200px) {
