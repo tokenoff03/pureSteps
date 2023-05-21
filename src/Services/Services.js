@@ -71,7 +71,7 @@ function Services() {
                     </div>
                     <div className={ss.additional_price_content}>
                         <p>Доп. услуги</p>
-                        <p>Восстановление<br/>цвета замши, чубук,<br/>кожа</p>
+                        <p>Восстановление<br/>цвета замши, нубук,<br/>кожа</p>
                         <img src="./image/spray.png" alt="spray"/>
                         <p>4500 kzt</p>
                     </div>
