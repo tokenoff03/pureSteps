@@ -155,4 +155,8 @@
     .content {
         display: none;
     }
+
+    .bottom_content p {
+        width: 70%;
+    }
 }
