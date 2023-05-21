@@ -9,7 +9,7 @@ function Header() {
     <div className={h.header}>
       <header>
           <div className={h.head}>
-            <img src="./image/logo.png" alt="Logo" className={h.img}/>
+            <img src="./image/LogoPure.svg" alt="Logo" className={h.img}/>
             
             <nav className={nav ? h.active : ""}>
                <ul>

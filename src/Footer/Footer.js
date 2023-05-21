@@ -5,7 +5,7 @@ function Footer() {
   return (
     <div className={f.footer}>
         <div className={f.content}>
-            <img src="./image/logo.png"/>
+            <img src="./image/LogoFooter.svg" alt="logo"/>
 
             <div className={f.footerNav}>
                 <div>
